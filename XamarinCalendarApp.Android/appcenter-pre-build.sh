@@ -4,6 +4,6 @@
 if [ "$APPCENTER_BRANCH" != "main" ];
 then
     MANIFEST_PATH="$APPCENTER_SOURCE_DIRECTORY/XamarinCalendarApp/Properties/AndroidManifest.xml"
-VERSION_CODE=$((VERSION_CODE_SHIFT + APPCENTER_BUILD_ID))
+VERSION_CODE=$(7)
 sed -i "" 's/android:versionCode="[^"]*"/android:versionCode="'$VERSION_CODE'"/' $MANIFEST_PATH
 fi
