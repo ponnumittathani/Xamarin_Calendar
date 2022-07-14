@@ -5,5 +5,5 @@ if [ "$APPCENTER_BRANCH" != "main" ];
 then
     VERSION_CODE=$((3 + APPCENTER_BUILD_ID))
 plutil -replace CFBundleVersion -string "$VERSION_CODE"
-$APPCENTER_SOURCE_DIRECTORY/PXamarinCalendarApp.iOS/Info.plist
+$APPCENTER_SOURCE_DIRECTORY/XamarinCalendarApp.iOS/Info.plist
 fi
